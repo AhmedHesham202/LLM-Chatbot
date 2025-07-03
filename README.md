@@ -47,7 +47,7 @@ Make sure Docker & Docker Compose are installed.
 
 docker-compose up --build
 
-Open browser at: http://localhost:8501 for Backend
+Open browser at: http://localhost:8000 for Backend
 Open browser at: http://localhost:8501 for Frontend
 
 Features in Action
