@@ -31,9 +31,11 @@ It uses a FastAPI backend to connect with the Groq LLaMA model and a Streamlit f
 ### 1. Clone the Repo
 
 git clone https://github.com/AhmedHesham202/LLM-Chatbot.git
+
 cd LLM-Chatbot
 
 2. Add Your API Key
+
 Rename .env.example to .env:
 
 mv .env.example .env
