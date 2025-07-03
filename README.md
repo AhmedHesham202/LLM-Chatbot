@@ -1,53 +1,88 @@
 # 🤖 IT Visionary Chatbot (FastAPI + Streamlit)
 
-An interactive LLM-powered chatbot built for the IT Visionary Assessment.  
-Powered by Groq API and containerized using Docker Compose.
+An interactive, containerized chatbot  
+It uses a FastAPI backend to connect with the Groq LLaMA model and a Streamlit frontend to display chat interactions, token usage, and response time.
 
 ---
 
 ## 🚀 Features
 
-- FastAPI backend with Groq LLaMA model integration
-- Streamlit frontend with chat UI, token usage, and response time
-- Error logging and session-based chat history
-- Fully dockerized and portable
+- FastAPI backend with Groq API integration
+- Streamlit frontend for the chat interface
+- LLM-powered responses (LLaMA 3 via Groq)
+- API key management using `.env`
+- Fully containerized with Docker Compose
+- Displays token usage & latency
 
 ---
 
-## 📦 Project Structure
+## 🧰 Tech Stack
+
+- Python 3.10
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Streamlit](https://streamlit.io/)
+- [Docker & Docker Compose](https://docs.docker.com/)
+- [Groq API](https://console.groq.com/)
+
+---
+
+## 📂 Project Structure
 
 ITVisionaryChatbot/
-├── backend/ # FastAPI service
-├── frontend/ # Streamlit UI
-├── docker-compose.yml
-├── .env.example # Example of env vars
+├── backend/
+│ ├── main.py # FastAPI server
+│ ├── requirements.txt
+│ └── Dockerfile
+├── frontend/
+│ ├── ui.py # Streamlit UI
+│ ├── requirements.txt
+│ └── Dockerfile
+├── docker-compose.yml # Compose config to run both services
+├── .env.example # Sample env file (no key exposed)
+├── .gitignore
 └── README.md
 
+---
 
 ## 🔧 Setup Instructions
 
 ### 1. Clone the Repo
 
-
-git clone https://github.com/YOUR_USERNAME/ITVisionaryChatbot.git
-cd ITVisionaryChatbot
+git clone https://github.com/AhmedHesham202/LLM-Chatbot.git
+cd LLM-Chatbot
 
 2. Add Your API Key
 Rename .env.example to .env:
 
-cp .env.example .env
+mv .env.example .env
 
 Then edit it and replace with your real key:
 
 GROQ_API_KEY=your_real_api_key_here
 
-3. Run the App
+3. Run the App with Docker
+Make sure Docker & Docker Compose are installed.
+
 docker-compose up --build
 
-Open browser at: http://localhost:8501
+Open browser at: http://localhost:8501 for Backend
+Open browser at: http://localhost:8501 for Frontend
 
-8501
+Features in Action
+
+- Live chat with memory
+
+- Token usage shown after each response
+
+- Execution time measured for performance
+
+- Logs saved to chatbot.log in backend
 
 Contributing
-Feel free to fork, clone, and suggest improvements!
 
+Contributions, forks, or issues are welcome.
+Feel free to open a pull request or suggest features.
+
+Author
+Ahmed Hesham
+Developed for the IT Visionary Assessment 2025
