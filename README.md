@@ -34,7 +34,7 @@ git clone https://github.com/AhmedHesham202/LLM-Chatbot.git
 
 cd LLM-Chatbot
 
-2. Add Your API Key
+### 2. Add Your API Key
 
 Rename .env.example to .env:
 
@@ -44,7 +44,7 @@ Then edit it and replace with your real key:
 
 GROQ_API_KEY=your_real_api_key_here
 
-3. Run the App with Docker
+### 3. Run the App with Docker
 Make sure Docker & Docker Compose are installed.
 
 docker-compose up --build
@@ -52,7 +52,7 @@ docker-compose up --build
 Open browser at: http://localhost:8000 for Backend
 Open browser at: http://localhost:8501 for Frontend
 
-Features in Action
+### Features in Action
 
 - Live chat with memory
 
@@ -62,11 +62,11 @@ Features in Action
 
 - Logs saved to chatbot.log in backend
 
-Contributing
+### Contributing
 
 Contributions, forks, or issues are welcome.
 Feel free to open a pull request or suggest features.
 
-Author
-Ahmed Hesham
+### Author
+### Ahmed Hesham
 Developed for the IT Visionary Assessment 2025
