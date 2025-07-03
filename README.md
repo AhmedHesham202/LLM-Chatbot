@@ -26,24 +26,6 @@ It uses a FastAPI backend to connect with the Groq LLaMA model and a Streamlit f
 
 ---
 
-## 📂 Project Structure
-
-ITVisionaryChatbot/
-├── backend/
-│ ├── main.py # FastAPI server
-│ ├── requirements.txt
-│ └── Dockerfile
-├── frontend/
-│ ├── ui.py # Streamlit UI
-│ ├── requirements.txt
-│ └── Dockerfile
-├── docker-compose.yml # Compose config to run both services
-├── .env.example # Sample env file (no key exposed)
-├── .gitignore
-└── README.md
-
----
-
 ## 🔧 Setup Instructions
 
 ### 1. Clone the Repo
